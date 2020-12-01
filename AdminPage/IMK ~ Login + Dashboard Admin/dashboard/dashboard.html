@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MovieDB - Dashboard</title>
+	<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  
+  <body>
+
+<!-- Navigation -->
+
+	<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+		<a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">
+			<div class="home-header">
+				<h3 id="title" class="text-white">Movie<span>DB</span></h1>
+			</div>
+		</a>
+		<button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<input class="form-control form-control-dark mx-2" type="text" placeholder="Search" aria-label="Search">
+		<div class="btn-group mx-2">
+		  <button type="button" class="btn btn-warning">User</button>
+		  <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<span class="sr-only">Toggle Dropdown</span>
+		  </button>
+		  <div class="dropdown-menu">
+			<a class="dropdown-item" href="facebook.com">Help</a>
+			<a class="dropdown-item" href="#">Setting</a>
+			<a class="dropdown-item" href="#">Log Out</a>
+		  </div>
+		</div>
+	</nav>
+
+<!-- Sidebar -->
+
+	<div class="container-fluid">
+	  <div class="row">
+		<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-black sidebar collapse">
+		  <div class="sidebar-sticky pt-3">
+			<ul class="nav flex-column">
+			  <li class="nav-item">
+				<a class="nav-link" href="#">
+				  <span data-feather="home"></span>
+				  Dashboard <span class="sr-only">(current)</span>
+				</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" href="#" >
+				  <span data-feather="film"></span>
+				  Movie
+				</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">
+				  <span data-feather="users"></span>
+				  Actors
+				</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">
+				  <span data-feather="flag"></span>
+				  Reports
+				</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">
+				  <span data-feather="settings"></span>
+				  Settings
+				</a>
+			  </li>
+			</ul>
+		  </div>
+		</nav>
+
+<!-- Dashboard -->
+
+		<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+		  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-5 border-bottom">
+			<h1 class="h2 text-warning"><b>Movie</b></h1>
+		  </div>
+		  <h3 class="text-warning my-4">Recently Added</h3>
+		  <button class="mb-3 btn btn-sm btn-primary" type="submit">		  
+				<a class=" text-white font-weight-bold" href="#" >
+				  <span data-feather="plus"></span>Add Movie
+				</a>
+		  </button>	  
+
+<!-- Card Deck -->
+
+		  <div class="card-deck">
+			  <div class="card text-white">
+				<div class="card-header font-weight-bold"><h5>The Return of Frank James(1940)</h5></div>
+				<img class="card-img-top px-3" src="https://m.media-amazon.com/images/M/MV5BYmMzZDZlNmYtMjZhMS00OGFiLTkyMjgtODk4YzFhNWM5ODM2XkEyXkFqcGdeQXVyNjQzNDI3NzY@._V1_SX300.jpg" alt="Card image cap">
+				<div class="card-body">
+				  <div class="btn-group">
+					  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+					  <button type="button" class="btn btn-sm btn-outline-secondary">Remove</button>
+				  </div>
+				</div>
+				<div class="card-footer">
+				  <small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			  </div>
+			  <div class="card text-white">
+				<div class="card-header font-weight-bold"><h5>Naruto: Shippûden(2007–2017)</h5></div>
+				<img class="card-img-top px-3" src="https://m.media-amazon.com/images/M/MV5BMTE5NzIwMGUtYTE1MS00MDUxLTgyZjctOWVkZDAxM2M4ZWQ4XkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_SX300.jpg" alt="Card image cap">
+				<div class="card-body">
+				  <div class="btn-group">
+					  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+					  <button type="button" class="btn btn-sm btn-outline-secondary">Remove</button>
+				  </div>
+				</div>
+				<div class="card-footer">
+				  <small class="text-muted">Last updated 15 mins ago</small>
+				</div>
+			  </div>
+			  <div class="card text-white">
+				<div class="card-header font-weight-bold"><h5>Stand by Me Doraemon(2014)</h5></div>
+				<img class="card-img-top px-3" src="https://m.media-amazon.com/images/M/MV5BMTNlZWU1YjEtM2FkMS00ODNhLWFhMDMtM2E0NWFkNGI0MDI1XkEyXkFqcGdeQXVyMjQ2MTk1OTE@._V1_SX300.jpg" alt="Card image cap">
+				<div class="card-body">
+				  <div class="btn-group">
+					  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+					  <button type="button" class="btn btn-sm btn-outline-secondary">Remove</button>
+				  </div>
+				</div>
+				<div class="card-footer">
+				  <small class="text-muted">Last updated 54 mins ago</small>
+				</div>
+			  </div>
+		   </div>
+
+<!-- Movie List -->
+
+		  <h2 class="text-warning my-4">Movie List</h2>
+		  
+		  
+		  
+		  <!-- Search form -->
+<div class="md-form active-cyan-2 mb-3">
+  <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+</div>
+		  
+		  
+		  
+		  <div class="table-responsive mt-3">
+			<table class="table table-hover table-sm table-dark">
+			  <thead>
+				<tr class="bg-warning text-dark">
+				  <th class="align-middle text-center">#</th>
+				  <th class="align-middle text-center">Movies</th>
+				  <th class="align-middle text-center">Release Date</th>
+				  <th class="align-middle text-center">Genre</th>
+				  <th class="align-middle text-center">Plot</th>
+				  <th class="align-middle text-center" colspan="3">Action</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>1</td>
+				  <td>Ayat-Ayat Cinta 2(2017)</td>
+				  <td>21/12/2017</td>
+				  <td>Drama</td>
+				  <td> Fahri, now living in Edinburgh and even a lecturer at thd University Pf Edinburgh, was forced to live his daily life alone. Together with Uncle Hulusi, his Turkish household assistant, he continued his life without Aisha.</td>
+				  <td><a class="nav-link text-success" href="#"><span data-feather="eye"></span></a></td>
+				  <td><a class="nav-link" href="#"><span data-feather="edit"></span></a></td>
+				  <td><a class="nav-link text-danger" href="#"><span data-feather="trash"></span></a></td>
+				</tr>
+				<tr>
+				  <td>2</td>
+				  <td>Naruto: Shippûden(2007–2017)</td>
+				  <td>28/10/2009</td>
+				  <td>Animation, Action, Adventure, Comedy, Drama, Fantasy</td>
+				  <td>Naruto Uzumaki, is a loud, hyperactive, adolescent ninja who constantly searches for approval and recognition, as well as to become Hokage, who is acknowledged as the leader and strongest of all ninja in the village.</td>
+				  <td><a class="nav-link text-success" href="#"><span data-feather="eye"></span></a></td>
+				  <td><a class="nav-link" href="#"><span data-feather="edit"></span></a></td>
+				  <td><a class="nav-link text-danger" href="#"><span data-feather="trash"></span></a></td>
+				</tr>
+				<tr>
+				  <td>3</td>
+				  <td>Stand by Me Doraemon(2014)</td>
+				  <td>08/08/2014</td>
+				  <td>Animation, Comedy, Drama, Family, Sci-Fi</td>
+				  <td>What will happen to Nobita's life after Doraemon leaves?</td>
+				  <td><a class="nav-link text-success" href="#"><span data-feather="eye"></span></a></td>
+				  <td><a class="nav-link" href="#"><span data-feather="edit"></span></a></td>
+				  <td><a class="nav-link text-danger" href="#"><span data-feather="trash"></span></a></td>
+				</tr>
+				<tr>
+				  <td>4</td>
+				  <td>Captain America: The First Avenger(2011)</td>
+				  <td>22/07/2011</td>
+				  <td>Action, Adventure, Sci-Fi</td>
+				  <td>Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a "Super-Soldier serum". But being Captain America comes at a price as he attempts to take down a war monger and a terrorist organization.</td>
+				  <td><a class="nav-link text-success" href="#"><span data-feather="eye"></span></a></td>
+				  <td><a class="nav-link" href="#"><span data-feather="edit"></span></a></td>
+				  <td><a class="nav-link text-danger" href="#"><span data-feather="trash"></span></a></td>
+				</tr>
+				<tr>
+				  <td>5</td>
+				  <td>The SpongeBob SquarePants Movie(2004)</td>
+				  <td>19/11/2004</td>
+				  <td>Animation, Action, Adventure, Comedy, Family, Fantasy</td>
+				  <td>SpongeBob SquarePants takes leave from the town of Bikini Bottom in order to track down King Neptune's stolen crown.</td>
+				  <td><a class="nav-link text-success" href="#"><span data-feather="eye"></span></a></td>
+				  <td><a class="nav-link" href="#"><span data-feather="edit"></span></a></td>
+				  <td><a class="nav-link text-danger" href="#"><span data-feather="trash"></span></a></td>
+				</tr>
+				<tr>
+				  <td>6</td>
+				  <td>Bean(1997)</td>
+				  <td>07/11/1997</td>
+				  <td>Adventure, Comedy, Family</td>
+				  <td>The bumbling Mr. Bean travels to America when he is given the responsibility of bringing a highly valuable painting to a Los Angeles museum</td>
+				  <td><a class="nav-link text-success" href="#"><span data-feather="eye"></span></a></td>
+				  <td><a class="nav-link" href="#"><span data-feather="edit"></span></a></td>
+				  <td><a class="nav-link text-danger" href="#"><span data-feather="trash"></span></a></td>
+				</tr>
+				<tr>
+				  <td>7</td>
+				  <td>Jos ovaj put(1983)</td>
+				  <td>N/A</td>
+				  <td>Drama, Thriller</td>
+				  <td>: A young prison inmate gets released together with an old gangster. They go to town together in order to visit their families and friends, but nobody knows that the old man is mortally ill.</td>
+				  <td><a class="nav-link text-success" href="#"><span data-feather="eye"></span></a></td>
+				  <td><a class="nav-link" href="#"><span data-feather="edit"></span></a></td>
+				  <td><a class="nav-link text-danger" href="#"><span data-feather="trash"></span></a></td>
+				</tr>
+				<tr>
+				  <td>8</td>
+				  <td>The Bone Collector(1999)</td>
+				  <td>05/11/1999</td>
+				  <td>Crime, Drama, Mystery, Thriller</td>
+				  <td> A quadriplegic ex-homicide detective and his partner try to track down a serial killer who is terrorizing New York City.</td>
+				  <td><a class="nav-link text-success" href="#"><span data-feather="eye"></span></a></td>
+				  <td><a class="nav-link" href="#"><span data-feather="edit"></span></a></td>
+				  <td><a class="nav-link text-danger" href="#"><span data-feather="trash"></span></a></td>
+				</tr>
+				<tr>
+				  <td>9</td>
+				  <td>Misión No Oficial(2017)</td>
+				  <td>07/09/2017</td>
+				  <td>Comedy</td>
+				  <td>A fake Uruguayan Chamber of Legal Marijuana travels to the United States to find 50 tons of cannabis to supply the country. President Jose Mujica will co-star in this deed.</td>
+				  <td><a class="nav-link text-success" href="#"><span data-feather="eye"></span></a></td>
+				  <td><a class="nav-link" href="#"><span data-feather="edit"></span></a></td>
+				  <td><a class="nav-link text-danger" href="#"><span data-feather="trash"></span></a></td>
+				</tr>
+				<tr>
+				  <td>10</td>
+				  <td>The Return of Frank James(1940)</td>
+				  <td>16/08/1940</td>
+				  <td>Adventure, Crime, Drama, History, Western</td>
+				  <td>Frank James continues to avoid arrest in order to take revenge on the Ford brothers for their murder of his brother Jesse</td>
+				  <td><a class="nav-link text-success" href="#"><span data-feather="eye"></span></a></td>
+				  <td><a class="nav-link" href="#"><span data-feather="edit"></span></a></td>
+				  <td><a class="nav-link text-danger" href="#"><span data-feather="trash"></span></a></td>
+				</tr>
+			  </tbody>
+			</table>
+		  <button class="my-3 btn btn-sm btn-warning" type="submit">		  
+			<a class=" text-dark font-weight-bold" href="#" ><span data-feather="chevron-left"></span></a>
+		  </button>
+		  <button class="my-3 btn btn-sm btn-warning" type="submit">		  
+			<a class=" text-dark font-weight-bold" href="#" >1</a>
+		  </button>
+		  <button class="my-3 btn btn-sm" type="submit">		  
+			<a class=" text-white font-weight-bold" href="#" >2</a>
+		  </button>
+		  <button class="my-3 btn btn-sm" type="submit">		  
+			<a class=" text-white font-weight-bold" href="#" >3</a>
+		  </button>
+		  <button class="my-3 btn btn-sm btn-warning" type="submit">		  
+			<a class=" text-dark font-weight-bold" href="#" ><span data-feather="chevron-right"></span></a>
+		  </button>
+		  </div>
+		</main>
+	  </div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
